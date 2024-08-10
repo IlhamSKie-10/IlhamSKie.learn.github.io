@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Belajar Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, red, purple);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+             animation: gradientAnimation 5s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background: #4CAF50;
+            color: white;
+            animation: slideIn 1s ease-in-out;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        tr:hover {
+            background: #e1f5fe;
+            transition: background 0.3s ease;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .summary {
+            font-size: 1.1em;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .progress-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .progress-bar {
+            height: 25px;
+            width: 0;
+            background: #4CAF50;
+            border-radius: 5px;
+            transition: width 0.3s ease;
+        }
+        .checkbox {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jadwal Belajar Python</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Minggu</th>
+                    <th>Hari</th>
+                    <th>Materi</th>
+                    <th>Durasi (Jam)</th>
+                    <th>Checkbox</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Week 1 -->
+                <tr>
+                    <td rowspan="7">Minggu 1</td>
+                    <td>Hari 1</td>
+                    <td>Pengenalan Python & Setup</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 2</td>
+                    <td>Dasar-Dasar Sintaksis Python</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 3</td>
+                    <td>Variabel dan Tipe Data</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 4</td>
+                    <td>Operator & Ekspresi</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 5</td>
+                    <td>Kondisi & Pengulangan</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 6</td>
+                    <td>Fungsi Dasar</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 7</td>
+                    <td>Projek Mini: Kalkulator</td>
+                    <td>3</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <!-- Week 2 -->
+                <tr>
+                    <td rowspan="7">Minggu 2</td>
+                    <td>Hari 8</td>
+                    <td>List & Tuple</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 9</td>
+                    <td>Dictionary & Set</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 10</td>
+                    <td>File Handling</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 11</td>
+                    <td>Exception Handling</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 12</td>
+                    <td>Modul dan Paket</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 13</td>
+                    <td>OOP Dasar</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 14</td>
+                    <td>Projek Mini: To-Do List</td>
+                    <td>3</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <!-- Week 3 -->
+                <tr>
+                    <td rowspan="7">Minggu 3</td>
+                    <td>Hari 15</td>
+                    <td>Pengantar Web dengan Flask</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 16</td>
+                    <td>Routing & Template Flask</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 17</td>
+                    <td>Formulir dan Validasi</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 18</td>
+                    <td>Database dengan SQLite</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 19</td>
+                    <td>API dan Request</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 20</td>
+                    <td>Pengujian dan Debugging</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 21</td>
+                    <td>Projek Mini: Aplikasi Web Sederhana</td>
+                    <td>3</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <!-- Week 4 -->
+                <tr>
+                    <td rowspan="7">Minggu 4</td>
+                    <td>Hari 22</td>
+                    <td>Pengenalan ke Data Science</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 23</td>
+                    <td>Pandas dan Numpy</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 24</td>
+                    <td>Visualisasi Data dengan Matplotlib</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 25</td>
+                    <td>Pengantar ke Machine Learning</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 26</td>
+                    <td>Scikit-learn dan Model Dasar</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 27</td>
+                    <td>Evaluasi Model</td>
+                    <td>2</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Hari 28</td>
+                    <td>Projek Akhir: Analisis Data dan Model ML</td>
+                    <td>3</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <div class="summary">
+            <p>Total Jam Belajar: <span id="total-hours">0</span> jam</p>
+        </div>
+    </div>
+
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const totalHoursElem = document.getElementById('total-hours');
+        const progressBar = document.getElementById('progress-bar');
+
+        function updateProgress() {
+            const totalHours = Array.from(checkboxes).reduce((total, checkbox) => {
+                const duration = parseFloat(checkbox.closest('tr').children[3].textContent);
+                return total + (checkbox.checked ? duration : 0);
+            }, 0);
+            const totalCheckboxes = checkboxes.length;
+            const completedCheckboxes = Array.from(checkboxes).filter(cb => cb.checked).length;
+            const percentage = (completedCheckboxes / totalCheckboxes) * 100;
+
+            totalHoursElem.textContent = totalHours;
+            progressBar.style.width = percentage + '%';
+        }
+
+        checkboxes.forEach(checkbox => checkbox.addEventListener('change', updateProgress));
+    </script>
+</body>
+</html>
